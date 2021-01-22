@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*  #626D71 slate 
+    #CDCDC0 ceramic
+    #DDBC95 late
+    #B38867 coffee
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .wave{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #626D71;
+}
+header .wave span{
+    position: absolute;
+    width: 325vh;
+    height: 325vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-75%);
+}
+header .wave span:nth-child(1){
+   animation: animate 5s linear infinite;
+   border-radius: 45%;
+   background-color: rgba(	205, 205, 192, 1);
+}
+header .wave span:nth-child(2){
+    animation: animate 10s linear infinite;
+    border-radius: 40%;
+    background-color: rgba(	205, 205, 192, .5);
+ }
+header .wave span:nth-child(3){
+    animation: animate 15s linear infinite;
+    border-radius: 40%;
+    background-color: rgba(	205, 205, 192, .5);
+ }
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-75%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-75%) rotate(360deg);
+    }
+}
+header .header-content{
+    position: relative;
+    z-index: 1;
+    color: #333;
+    font-size: 4em;
+    margin-top: -15vh;
+}
+header .header-content .paul-pic{
+    background: url(../img/header-pic.jpg);
+    background-size: 390px;
+    background-position: -86px 1px;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+}
+header .header-content h2{
+    text-decoration: underline;
+}
+header .header-content p{
+    font-size: .6em;
+}
+.header-content p span a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #B38867;
+}
+nav{
+    width: 100%;
+    background-color:#626D71;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+}
+nav ul li{
+    padding: 20px;
+    text-decoration: none;
+    
+}
+nav ul li a{
+    color: #CDCDC0;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+section{
+    background-color: #CDCDC0;
+    padding: 150px;
+    color: #333;
+    font-size: 3em;
+}
+
+section .page-title{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+section .flex-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    align-items: center;
+}
+section .flex-box ul{
+    border-right: solid 5px #333;
+}
+
+section .flex-box ul li{
+    list-style: none;
+    font-size: 1.5vw;
+    margin: 10px 0;
+}
+section .flex-box ul li span{
+    font-weight: bold;
+    color: #B38867;
+}
+section .flex-box .paul-about-pic{
+    width: 55%;
+    margin: 0 auto;
+}
+
+section#achievements{
+    background-color: #626D71;
+    color: #CDCDC0;
+}
+#achievements h3{
+    margin-bottom: 1.5vw;
+}
+
+#achievements p, #achievements ul li, #experience .box p, #experience .box ul li{
+    margin: 30px 0;
+    font-size: 1.5vw;
+}
+#achievements p span{
+    font-weight: bold;
+}
+
+#achievements ul, #experience .box ul{
+    margin-top: -10px;
+    margin-left: 27px;
+}
+
+#education .flex-box .box{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#education .flex-box .box h4{
+    color: #B38867;
+    font-size: 2vw;
+}
+
+.paralax{
+    background-image: url(../img/paralax-pic.jpg);
+    height: 80vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 10%;
+    background-attachment: fixed;
+}
+
+#experience .box{
+    border-bottom: solid 5px #333;
+    padding-bottom: 50px;
+}
+#experience .box:last-child{
+    border-bottom: none;
+}
+#experience .box ul li{
+    list-style-type: none;
+}
+
+#experience .box ul li::before{
+    content: "- ";
+    font-weight: bold;
+}
+
+#experience .box p span{
+    color: #B38867;
+    font-weight: bold;
+}
+
+.gotop-box{
+    display: none;
+	position: fixed;
+    bottom: 20px;
+    right: 80px;
+	text-align: right;
+	padding: 10px 0;
+	z-index: 2;	
+}
+
+.gotop-box .fas{
+    
+	font-size: 50px;
+	color: #B38867;
+	margin-right: 5%;
+}
+
+.gotop-box.active{
+    display: block;
+}
+
+
+
+
