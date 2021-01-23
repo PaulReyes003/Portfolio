@@ -135,7 +135,9 @@ section .flex-box{
 }
 section .flex-box ul{
     border-right: solid 5px #333;
+    padding-top: 10%;
     padding-right: 1%;
+    align-items: center;
 }
 
 section .flex-box ul li{
