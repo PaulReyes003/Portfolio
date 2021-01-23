@@ -132,10 +132,10 @@ section .flex-box{
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
-    align-items: center;
 }
 section .flex-box ul{
     border-right: solid 5px #333;
+    padding-right: 1%;
 }
 
 section .flex-box ul li{
